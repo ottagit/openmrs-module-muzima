@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="org.openmrs.module.muzima.model">
+
+    <class name="Settings" table="muzima_settings">
+        <id name="id" type="java.lang.Integer" column="id" unsaved-value="0">
+            <generator class="native"/>
+        </id>
+        <property name="settingName" type="java.lang.Boolean" column="settingName" not-null="true"/>
+
+        <property name="confirmApproval" type="java.lang.Boolean" column="confirmApproval" not-null="true"/>
+        
+    </class>
+
+</hibernate-mapping>
